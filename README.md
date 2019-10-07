@@ -10,15 +10,15 @@ This project was made following [theodinproject guide](https://www.theodinprojec
 # Setup to run the project
 
 <p>To install all the dependencies required run:</p>
-<p><strong><code> bundle install </code></strong></p>
+<p><strong><code> $ bundle install </code></strong></p>
 
 <p>To create the database run: </p>
-<p><strong><code> rails db:migrate </code></strong></p>
+<p><strong><code> $ rails db:migrate </code></strong></p>
 
 
 # How to test the project
 <p>
-  You need to run <strong><code> rails c </code></strong> to start the console
+  You need to run <strong><code> $ rails c </code></strong> to start the console
 </p>
 <p>
   To check if the 3 tables exists run the following commands:
@@ -26,13 +26,13 @@ This project was made following [theodinproject guide](https://www.theodinprojec
 <p>
   <ul>
     <li>
-      <p><strong><code> User.new </code></strong></p>
+      <p><strong><code> > User.new </code></strong></p>
     </li>
     <li>
-      <p><strong><code> Post.new </code></strong></p>
+      <p><strong><code> > Post.new </code></strong></p>
     </li>
     <li>
-      <p><strong><code> Comment.new </code></strong></p>
+      <p><strong><code> > Comment.new </code></strong></p>
     </li>
   </ul>
 </p>
