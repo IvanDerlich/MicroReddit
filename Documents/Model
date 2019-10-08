@@ -1,0 +1,38 @@
+Users
+    Fields
+    name:string, presence, unique, length 6..80
+    email: presence,unique, length max 255, format (regular expression)
+    --
+    has_many: posts
+    has_many: comments
+    --
+    Command
+    rails generate model User name:string email:string
+Posts
+    Fields
+    title: presence,string,unique,length 7..60
+    link: presence,string,length 3..100
+    --
+    Foreign Keys
+    user_id: integer
+    --
+    has_many: comments
+    belongs_to: user
+    --Command
+    rails generate model Post title:string link:string user:references
+Comments    
+    Fields
+    body:text,length: {maximum: 300},presence
+    --
+    Foreign Keys
+    post_id: integer
+    user_id: integer
+    --
+    belongs_to posts
+    belongs_to user
+    --
+    Validate
+        presence of userid and postid
+    --
+    rails generate model Comments body:text post:references user:references
+    
